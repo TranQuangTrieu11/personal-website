@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Thay đổi tiêu đề trang web ở đây -->
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Thay đổi tên của bạn ở đây -->
+            <h1 class="logo">TQT</h1>
+            <nav>
+                <ul>
+                    <!-- Bạn có thể thay đổi các mục menu ở đây -->
+                    <li><a href="#home">Trang chủ</a></li>
+                    <li><a href="#about">Giới thiệu</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#projects">Dự án</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Thay đổi giới thiệu và tên của bạn ở đây -->
+                <h1>Xin chào, tôi là <span class="highlight">Trần Quang Triều</span></h1>
+                <!-- Thay đổi các từ khóa mô tả bản thân ở đây -->
+                <p>Developer | Designer | Creator</p>
+                <a href="#contact" class="btn">Liên hệ với tôi</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Giới thiệu</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <!-- Thay đổi URL hình ảnh đại diện của bạn ở đây -->
+                    <img src="images/anhdaidien.jpg" alt="Profile Picture">                </div>
+                <div class="about-text">
+                    <!-- Thay đổi nội dung giới thiệu về bản thân ở đây -->
+                    <p>Xin chào! Tôi là Triều, một người có đam mê với lĩnh vực về công nghệ. Với 5 kinh nghiệm làm việc với công nghệ, tôi đã phát triển các kỹ năng chuyên môn trong lĩnh vực này.</p>
+                    <p>Tôi luôn tìm kiếm cơ hội để học hỏi và phát triển bản thân. Mục tiêu của tôi là mở một công ty cho riêng mình về lĩnh vực công nghệ.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Kỹ năng</h2>
+            <div class="skills-content">
+                <!-- Thay đổi các kỹ năng của bạn ở đây -->
+                <div class="skill">
+                    <i class="fas fa-code"></i>
+                    <h3>Lập trình</h3>
+                    <p>HTML, CSS, JavaScript, Python, PHP</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Thiết kế</h3>
+                    <p>Photoshop, Illustrator, Figma</p>
+                </div>
+                <div class="skill">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Công nghệ</h3>
+                    <p>React, Node.js, Express</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Dự án</h2>
+            <div class="projects-grid">
+                <!-- Thay đổi thông tin dự án của bạn ở đây - Có thể thêm nhiều dự án hơn -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 1">
+                    <h3>StockInsight: Phân tích thị trường chứng khoán</h3>
+                    <p>Dự án thu thập và phân tích dữ liệu từ thị trường chứng khoán Việt Nam, sử dụng Python kết hợp với các thư viện như Pandas, Numpy và Scikit-learn. Hệ thống tự động cập nhật dữ liệu giá cổ phiếu, phân tích xu hướng thị trường và đưa ra các dự báo dựa trên mô hình học máy. Dashboard trực quan hóa giúp người dùng dễ dàng theo dõi và đưa ra quyết định đầu tư hiệu quả.</p>
+                    <a href="#" class="btn-small" data-modal="modal-project1">Xem chi tiết</a>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 2">
+                    <h3>EventPro: Hệ thống Quản lý Sự kiện</h3>
+                    <p>Dự án phát triển nền tảng web quản lý sự kiện toàn diện, cho phép người dùng tạo, quản lý và theo dõi các sự kiện. Hệ thống bao gồm trang admin cho người tổ chức và giao diện thân thiện cho người tham gia. Các tính năng chính: đăng ký sự kiện online, thanh toán trực tuyến, quản lý danh sách khách mời, gửi email thông báo tự động, quản lý lịch trình, tạo báo cáo thống kê và khảo sát đánh giá sau sự kiện. Được xây dựng bằng React, Node.js và MongoDB, với hệ thống API RESTful và thiết kế responsive đảm bảo trải nghiệm tốt trên mọi thiết bị.</p>
+                    <a href="#" class="btn-small" data-modal="modal-project2">Xem chi tiết</a>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Project 3">
+                    <h3>CloudVault: Nền tảng lưu trữ đám mây an toàn</h3>
+                    <p>Dự án phát triển hệ thống lưu trữ đám mây toàn diện, cung cấp giải pháp đồng bộ và bảo mật dữ liệu cho người dùng cá nhân và doanh nghiệp. Hệ thống được xây dựng với kiến trúc microservices sử dụng Docker và Kubernetes, đảm bảo khả năng mở rộng và độ tin cậy cao. Các tính năng nổi bật bao gồm: xác thực hai lớp, mã hóa dữ liệu đầu cuối, đồng bộ hóa tự động giữa các thiết bị, chia sẻ tệp an toàn, phân quyền chi tiết và khôi phục dữ liệu. Giao diện người dùng được phát triển bằng React và Redux, kết hợp với backend Node.js và cơ sở dữ liệu phân tán để đảm bảo hiệu suất và độ bền dữ liệu.</p>
+                    <a href="#" class="btn-small" data-modal="modal-project3">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal cho các dự án -->
+    <div class="modal-container" id="modal-project1">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>StockInsight: Phân tích thị trường chứng khoán</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="https://via.placeholder.com/800x400" alt="Project 1 Detail">
+                </div>
+                <div class="modal-details">
+                    <h3>Mô tả dự án</h3>
+                    <p>Dự án thu thập và phân tích dữ liệu từ thị trường chứng khoán Việt Nam, sử dụng Python kết hợp với các thư viện như Pandas, Numpy và Scikit-learn.</p>
+                    
+                    <h3>Công nghệ sử dụng</h3>
+                    <ul>
+                        <li>Python (Pandas, NumPy, Scikit-learn)</li>
+                        <li>Flask (Backend API)</li>
+                        <li>React.js (Frontend)</li>
+                        <li>PostgreSQL (Cơ sở dữ liệu)</li>
+                        <li>Docker (Containerization)</li>
+                    </ul>
+                    
+                    <h3>Tính năng chính</h3>
+                    <ul>
+                        <li>Thu thập dữ liệu giá cổ phiếu tự động</li>
+                        <li>Phân tích kỹ thuật với các chỉ báo (MA, MACD, RSI)</li>
+                        <li>Dự báo xu hướng giá với ML</li>
+                        <li>Dashboard trực quan</li>
+                        <li>Cảnh báo giá theo thời gian thực</li>
+                    </ul>
+                    
+                    <h3>Kết quả đạt được</h3>
+                    <p>Hệ thống đạt độ chính xác 78% trong dự báo xu hướng ngắn hạn. Được sử dụng bởi hơn 200 nhà đầu tư cá nhân.</p>
+                    
+                    <!-- Thêm link đến sản phẩm, demo, hoặc mã nguồn -->
+                    <div class="project-links">
+                        <a href="#" class="btn-small">Xem Demo</a>
+                        <a href="#" class="btn-small">GitHub</a>
+                        <a href="#" class="btn-small">Báo cáo chi tiết</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="modal-project2">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>EventPro: Hệ thống Quản lý Sự kiện</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="https://via.placeholder.com/800x400" alt="Project 2 Detail">
+                </div>
+                <div class="modal-details">
+                    <h3>Mô tả dự án</h3>
+                    <p>Dự án phát triển nền tảng web quản lý sự kiện toàn diện, cho phép người dùng tạo, quản lý và theo dõi các sự kiện.</p>
+                    
+                    <h3>Công nghệ sử dụng</h3>
+                    <ul>
+                        <li>React.js và Redux (Frontend)</li>
+                        <li>Node.js và Express (Backend)</li>
+                        <li>MongoDB (Cơ sở dữ liệu)</li>
+                        <li>JWT (Xác thực)</li>
+                        <li>Stripe API (Thanh toán)</li>
+                    </ul>
+                    
+                    <h3>Tính năng chính</h3>
+                    <ul>
+                        <li>Đăng ký sự kiện online</li>
+                        <li>Thanh toán trực tuyến</li>
+                        <li>Quản lý danh sách khách mời</li>
+                        <li>Gửi email thông báo tự động</li>
+                        <li>Quản lý lịch trình</li>
+                        <li>Tạo báo cáo thống kê</li>
+                        <li>Khảo sát đánh giá sau sự kiện</li>
+                    </ul>
+                    
+                    <h3>Kết quả đạt được</h3>
+                    <p>Nền tảng đã được sử dụng để quản lý hơn 50 sự kiện với tổng cộng 5000+ người tham dự. Giảm 70% thời gian quản lý sự kiện so với phương pháp truyền thống.</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn-small">Xem Demo</a>
+                        <a href="#" class="btn-small">GitHub</a>
+                        <a href="#" class="btn-small">Tài liệu API</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-container" id="modal-project3">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>CloudVault: Nền tảng lưu trữ đám mây an toàn</h2>
+                <span class="modal-close">&times;</span>
+            </div>
+            <div class="modal-content">
+                <div class="modal-image">
+                    <img src="https://via.placeholder.com/800x400" alt="Project 3 Detail">
+                </div>
+                <div class="modal-details">
+                    <h3>Mô tả dự án</h3>
+                    <p>Dự án phát triển hệ thống lưu trữ đám mây toàn diện, cung cấp giải pháp đồng bộ và bảo mật dữ liệu cho người dùng cá nhân và doanh nghiệp.</p>
+                    
+                    <h3>Công nghệ sử dụng</h3>
+                    <ul>
+                        <li>React và Redux (Frontend)</li>
+                        <li>Node.js (Backend)</li>
+                        <li>MongoDB và Redis (Cơ sở dữ liệu)</li>
+                        <li>Docker và Kubernetes (Container)</li>
+                        <li>AWS S3 (Lưu trữ)</li>
+                        <li>JWT và OAuth (Xác thực)</li>
+                    </ul>
+                    
+                    <h3>Tính năng chính</h3>
+                    <ul>
+                        <li>Xác thực hai lớp</li>
+                        <li>Mã hóa dữ liệu đầu cuối</li>
+                        <li>Đồng bộ hóa tự động giữa các thiết bị</li>
+                        <li>Chia sẻ tệp an toàn</li>
+                        <li>Phân quyền chi tiết</li>
+                        <li>Khôi phục dữ liệu</li>
+                    </ul>
+                    
+                    <h3>Kết quả đạt được</h3>
+                    <p>Hệ thống xử lý hơn 1TB dữ liệu mỗi ngày với độ sẵn sàng 99.9%. Được triển khai tại 5 doanh nghiệp với tổng cộng hơn 500 người dùng.</p>
+                    
+                    <div class="project-links">
+                        <a href="#" class="btn-small">Xem Demo</a>
+                        <a href="#" class="btn-small">GitHub</a>
+                        <a href="#" class="btn-small">Kiến trúc hệ thống</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Liên hệ</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <!-- Thay đổi thông tin liên hệ của bạn ở đây -->
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>quangtrieutqt1111@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+84 358 746 597</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Phú Yên, Việt Nam</p>
+                    </div>
+                    <!-- Thay đổi các liên kết mạng xã hội của bạn ở đây -->
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/chu.chuot.7140497"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/TranQuangTrieu11"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Họ và tên" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Tin nhắn" required></textarea>
+                    <button type="submit" class="btn">Gửi tin nhắn</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <!-- Thay đổi văn bản footer ở đây -->
+            <p>&copy; 2025, Welcom to TQT.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
